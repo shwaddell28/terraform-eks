@@ -20,7 +20,7 @@ To create the cluster and deploy the app, run the following script from the proj
 $ sh deploy.sh
 ```
 
-This script will initialize, plan, and apply the two terraform configurations present in the project. Two separate terraform configurations are used in order to ensure the cluster is properly created before attempting to create any kubernetes resources.
+This script will initialize and auto apply the two terraform modules present in the project. Two separate terraform modules are used in order to ensure the cluster creation is complete before attempting to create any kubernetes resources.
 
 The following resources will be created:
 
