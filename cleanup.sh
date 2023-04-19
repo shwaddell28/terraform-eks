@@ -1,4 +1,5 @@
 #!/bin/sh
+set -e
 
 export TF_IN_AUTOMATION=1
 
