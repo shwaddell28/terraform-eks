@@ -3,12 +3,12 @@ set -e
 
 export TF_IN_AUTOMATION=1
 
-# terraform init -input=false
-# terraform apply -input=false -auto-approve
+terraform init -input=false
+terraform apply -input=false -auto-approve
 
 cd kubernetes-config
-# terraform init -input=false
-# terraform apply -input=false -auto-approve
+terraform init -input=false
+terraform apply -input=false -auto-approve
 
 set +e
 url=$(terraform output -raw lb_ip)
